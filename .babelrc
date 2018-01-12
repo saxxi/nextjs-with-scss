@@ -21,8 +21,6 @@
   ],
   "plugins": [
     "babel-plugin-transform-undefined-to-void",
-    "minify-guarded-expressions",
-    ["minify-dead-code-elimination", { "optimizeRawSize": true }],
     [
       "module-resolver",
       {
