@@ -1,6 +1,6 @@
-@import 'styles/settings.colors';
+@import 'styles/base.variables';
 
 h1 {
-  color: $h1-color;
+  color: $primary;
   text-align: center;
 }
