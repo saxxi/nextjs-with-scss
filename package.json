@@ -1,12 +1,15 @@
 {
   "scripts": {
-    "dev": "next -p ${PORT:-8080}",
+    "dev": "nodemon -w server.js server.js",
     "build": "NODE_ENV=production next build",
-    "start": "NODE_ENV=production next start -p ${PORT:-8080}"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "axios": "^0.17.1",
     "bulma": "^0.6.2",
+    "express": "^4.16.2",
     "next": "^4.2.0",
+    "path-match": "^1.2.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   },
@@ -16,6 +19,7 @@
     "babel-preset-latest": "^6.24.1",
     "babel-preset-minify": "^0.2.0",
     "node-sass": "^4.7.2",
+    "nodemon": "^1.14.11",
     "styled-jsx": "^2.2.1",
     "styled-jsx-css-loader": "^0.3.0",
     "styled-jsx-plugin-sass": "^0.2.2"
