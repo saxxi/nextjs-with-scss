@@ -1,21 +1,21 @@
-import Layout from '../components/Layout.js';
-import indexStyles from './index.scss';
+import Layout from '../components/Layout.js'
+import indexStyles from './index.scss'
 
 export default () => {
   const foo = () => { return 33 }
-  const foo_this_is_mine = () => { var x = 1; }
-  const bar_this_is_mine = () => { var x = f(); }
+  const foo_this_is_mine = () => { var x = 1 }
+  const bar_this_is_mine = () => { var x = f() }
   
   const baz_this_is_mine = () => {
-    console.log('ciao');
+    console.log('ciao')
 
-    !x && foo();
-    console.log(0 && new Foo());
+    !x && foo()
+    console.log(0 && new Foo())
 
-    var x = 1;
-    console.log(x);
+    var x = 1
+    console.log(x)
     const unused = () => {
-      return 5;
+      return 5
     }
   }
   
