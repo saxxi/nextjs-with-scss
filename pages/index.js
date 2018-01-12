@@ -23,6 +23,7 @@ export default () => {
     <Layout>
       <h1 className="o-h1">Nextjs with SCSS</h1>
       <a onClick={baz_this_is_mine} className="button is-primary">button test</a>
+      <img src="/static/space-620x412.jpg" />
       <style jsx>{indexStyles}</style>
     </Layout>
   )
