@@ -14,11 +14,19 @@
     "babel-plugin-minify-dead-code-elimination": "^0.2.0",
     "babel-plugin-minify-guarded-expressions": "^0.2.0",
     "babel-plugin-module-resolver": "^3.0.0",
+    "babel-preset-env": "^1.6.1",
     "babel-preset-latest": "^6.24.1",
+    "babel-preset-minify": "^0.2.0",
     "node-sass": "^4.7.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "styled-jsx": "^2.2.1",
     "styled-jsx-css-loader": "^0.3.0",
     "styled-jsx-plugin-sass": "^0.2.2"
+  },
+  "env": {
+    "production": {
+      "presets": ["minify"]
+    }
   }
 }

@@ -1,5 +1,10 @@
 {
   "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions"]
+      }
+    }],
     [
       "next/babel",
       {
@@ -15,6 +20,7 @@
     ]
   ],
   "plugins": [
+    "babel-plugin-transform-undefined-to-void",
     "minify-guarded-expressions",
     ["minify-dead-code-elimination", { "optimizeRawSize": true }],
     [
